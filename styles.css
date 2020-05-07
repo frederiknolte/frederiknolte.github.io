@@ -25,6 +25,7 @@
 
 body, html {
   background-color: var(--background-color);
+  scroll-behavior: smooth;
 }
 
 .glitch-wrapper {
@@ -89,6 +90,19 @@ body, html {
   padding: 8px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+
+.text-wrapper p {
+  position: absolute;
+  top: 120%;
+  font-size: 24px;
+  color: var(--text-color);
+  font-family: sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 25px;
 }
 
 @keyframes glitch-animation-1 {
