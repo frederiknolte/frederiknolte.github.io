@@ -27,13 +27,13 @@ body, html {
   background-color: var(--background-color);
 }
 
-.wrapper {
+.glitch-wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.wrapper .glitch {
+.glitch-wrapper .glitch {
   color: var(--text-color);
   margin-top: 200px;
   font-family: sans-serif;
@@ -42,7 +42,7 @@ body, html {
   font-size: 100px;
   padding: 30px;
 }
-.wrapper .glitch::before, .wrapper .glitch::after {
+.glitch-wrapper .glitch::before, .glitch-wrapper .glitch::after {
   padding: 30px;
   color: var(--glitch-color);
   content: attr(glitch-text);
@@ -51,18 +51,18 @@ body, html {
   top: 0;
   clip: rect(0, 900px, 0, 0);
 }
-.wrapper .glitch::before {
+.glitch-wrapper .glitch::before {
   left: 3px;
   text-shadow: -2px 0 var(--glitch-before-color);
   animation: glitch-animation-1 2s infinite linear alternate-reverse;
 }
-.wrapper .glitch::after {
+.glitch-wrapper .glitch::after {
   left: -3px;
   text-shadow: -2px 0 var(--glitch-after-color);
   animation: glitch-animation-2 2s infinite linear alternate-reverse;
 }
 
-p, a {
+.link-wrapper p, .link-wrapper a {
   font-size: 24px;
   color: var(--text-color);
   font-family: sans-serif;
@@ -70,9 +70,25 @@ p, a {
   text-decoration: none;
   text-align: center;
 }
-a:hover {
+.link-wrapper a:hover {
   display: inline-block;
   transform: scaleY(-1);
+}
+
+.arrow-wrapper p {
+  position: absolute;
+  bottom:20px;
+  left: 50%;
+  margin-left: -10px;
+}
+
+.arrow-wrapper .arrow {
+  border: solid var(--text-color);
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 8px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 @keyframes glitch-animation-1 {
