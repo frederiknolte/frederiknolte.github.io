@@ -96,7 +96,7 @@ body, html {
   position: relative;
   -webkit-transform: translate(0%,0%);
   transform: translate(0%,700%);
-  width: 100%;
+  width: 40%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 25px;
@@ -120,8 +120,14 @@ body, html {
   font-family: sans-serif;
   font-weight: 400;
   text-decoration: none;
-  width: 40%;
   text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="content-wrapper"] {
+    width: 90%;
+  }
 }
 
 @keyframes glitch-animation-1 {
