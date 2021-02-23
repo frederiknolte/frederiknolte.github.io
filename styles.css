@@ -114,10 +114,9 @@ body, html {
 
 .post-wrapper p {
   font-size: 14px;
+  border-radius: 5px;
   color: black;
   background: white;
-  border-style: solid;
-  border-color: black;
   font-family: sans-serif;
   font-weight: 400;
   text-decoration: none;
