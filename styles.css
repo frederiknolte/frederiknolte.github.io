@@ -92,9 +92,17 @@ body, html {
   -webkit-transform: rotate(45deg);
 }
 
-.text-wrapper p {
-  position: absolute;
+.content-wrapper p {
+  position: relative;
+  -webkit-transform: translate(0%,0%);
+  transform: translate(0%,600%);
   top: 120%;
+  width: 100%;
+  padding-bottom: 25px;
+  color: var(--text-color);
+}
+
+.text-wrapper p {
   font-size: 24px;
   color: var(--text-color);
   font-family: sans-serif;
@@ -102,7 +110,16 @@ body, html {
   text-decoration: none;
   width: 100%;
   text-align: center;
-  padding-bottom: 25px;
+}
+
+.post-wrapper p {
+  font-size: 24px;
+  color: var(--text-color);
+  font-family: sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
 }
 
 @keyframes glitch-animation-1 {
