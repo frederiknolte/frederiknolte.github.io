@@ -92,35 +92,42 @@ body, html {
   -webkit-transform: rotate(45deg);
 }
 
-.content-wrapper p {
-  position: relative;
-  -webkit-transform: translate(0%,0%);
-  transform: translate(0%,700%);
+.content-distance p {
+  position: static;
+  margin-top: 45vh;
+  width: 40%;
+}
+
+.content-wrapper {
+  position: static;
   width: 40%;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 25px;
-  color: var(--text-color);
-}
-
-.text-wrapper p {
-  font-size: 24px;
-  color: var(--text-color);
   font-family: sans-serif;
-  font-weight: 800;
   text-decoration: none;
-  text-align: center;
 }
 
 .post-wrapper p {
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-size: 14px;
+  padding: 10px;
   border-radius: 5px;
   color: black;
   background: white;
-  font-family: sans-serif;
+  border-color: black;
+  border-style: solid;
   font-weight: 400;
-  text-decoration: none;
   text-align: left;
+}
+
+.text-wrapper p {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: var(--text-color);
+  font-weight: 800;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
