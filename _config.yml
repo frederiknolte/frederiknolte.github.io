@@ -1,0 +1,55 @@
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+title: Frederik P. Nolte
+description: >- # this means to ignore newlines until "baseurl:"
+  MSc Artificial Intelligence Student @ University of Amsterdam
+baseurl: "/bay" # the subpath of the site
+url: "https://frederiknolte.github.io" # the base hostname & protocol for the site
+og_image: /assets/img/profile-pic.jpg
+
+header:
+  pages:
+    - name: Home
+      slug: /
+#    - name: Blog
+
+footer:
+  show_powered_by: true
+  contact:
+    - name: Email
+      value: frederik.nolte [at] student.uva.nl
+      link: mailto:frederik.nolte@student.uva.nl
+  follow:
+    - name: Twitter
+      link: http://twitter.com/frederikpnolte
+      username: "@frederikpnolte"
+    - name: LinkedIn
+      link: http://linkedin.com/in/frederiknolte
+    - name: GitHub
+      link: http://github.com/frederiknolte
+    - name: Google Scholar
+      link: https://scholar.google.com/citations?hl=en&user=ix8sYaEAAAAJ
+
+# Build settings
+markdown: kramdown
+sass:
+    style: :compressed
+plugins:
+  - jekyll-feed
+
+# Excluded items
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - feed.xml
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Used for defeating caching
+version: 1
